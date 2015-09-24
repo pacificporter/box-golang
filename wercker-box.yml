@@ -33,7 +33,7 @@ script : |
 
   # Make actual go workspace dir structure
   mkdir -p "$HOME/go/{src,pkg,bin}"
-  /usr/local/go/bin/go get golang.org/x/tools/cmd/vet
+  sudo -E /usr/local/go/bin/go get golang.org/x/tools/cmd/vet
 
 box-detect:
   priority : 900
