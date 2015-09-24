@@ -34,6 +34,8 @@ script : |
   # Make actual go workspace dir structure
   mkdir -p "$HOME/go/{src,pkg,bin}"
   sudo -E /usr/local/go/bin/go get golang.org/x/tools/cmd/vet
+  sudo chown -R ubuntu:ubuntu /home/ubuntu
+  sudo chmod -R u+rX /home/ubuntu
 
 box-detect:
   priority : 900
